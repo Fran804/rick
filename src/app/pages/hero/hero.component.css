@@ -1,0 +1,14 @@
+.title-hero {
+    text-align: center;
+}
+
+.button-join-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-hero-container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}

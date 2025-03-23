@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color: #000000;
+    --green-color: #77d122;
+    --pink-color: #f675da;
+    --blue-color: #b5d2e4;
+    --white-color: #ffff;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('otf'),
+            url('assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BryndanWrite';
+    src: url('assets/fonts/bryndan-write/BryndanWrite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-family: 'GlacialIndifference', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.title-text {
+    font-family: 'BryndanWrite', Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.subtitle-text {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.pink-text-color {
+    color: var(--pink-color);
+}
+

@@ -1,0 +1,28 @@
+#About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 100vh;
+}
+
+.text-container {
+    width: 60%;
+}
+
+.text-container p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.img-about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.img-about-container img {
+    width: 700px;
+}

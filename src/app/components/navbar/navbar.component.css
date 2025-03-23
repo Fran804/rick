@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.img-logo {
+    width: 300px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.links-container a {
+    color: white;
+    text-decoration: var(--white-color);
+}
