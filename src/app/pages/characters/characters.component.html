@@ -5,14 +5,14 @@
     </div>
     <div class="cards-container">
         @for (char of dataCharacters; track $index) {
-            <div class="card">
+            <div class="card" [ngStyle]="{ 'background-color': getBackgroundColor($index) }">
                 <img class="icon-card" [src]="char.image" alt="">
-                <h1>{{char.name}}</h1>
-                <div>
-                    <div class="icon-circle-card"></div>
+                <h1  class="title-card">{{char.name}}</h1>
+                <div class="status-card">
+                    <div [class]="char.status === 'Alive' ? 'icon-circle-green': 'icon-circle-red' "></div>
                     <p>{{char.status}} - {{char.species}}</p>
                 </div>
-                <p>Origen: {{char.origin.name}}</p>
+                <p><strong>Origen:</strong> {{char.origin.name}}</p>
             </div>
         }  
     </div>

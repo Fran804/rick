@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../../services/character.service';
 import { Character } from '../../interfaces/characters';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-characters',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './characters.component.html',
   styleUrl: './characters.component.css'
 })
 export class CharactersComponent implements OnInit {
   dataCharacters: Character[] = []
+  backgroundColors: string[] = ['#b5d2e4', '#f0e14a', '#f675da', '#e4a788', '#0f7216', '#b5d2e4'];
 
   constructor(private characterService: CharacterService) {}
 
@@ -27,6 +29,10 @@ export class CharactersComponent implements OnInit {
         console.log(err)
       }
     })
+  }
+
+  getBackgroundColor(index: number): string {
+    return this.backgroundColors[index];
   }
 
   

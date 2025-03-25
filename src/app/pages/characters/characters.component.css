@@ -7,6 +7,11 @@
     gap: 60px;
 }
 
+.icon-card {
+    height: 200px;
+    border-radius: 50%;
+}
+
 .cards-container {
     height: 100%;
     display: grid;
@@ -26,9 +31,31 @@
     background-color: var(--blue-color);
     border-radius: 25px;
     margin: 0px 20px;
+    color: black;
 }
 
-.icon-card {
-    height: 200px;
+.title-card {
+    font-family: 'BryndanWrite', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.status-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-circle-green {
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
+    background-color: greenyellow;
+}
+
+.icon-circle-red {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
 }
