@@ -1,0 +1,27 @@
+#Characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 6%;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.icon-card {
+    height: 250px;
+}
