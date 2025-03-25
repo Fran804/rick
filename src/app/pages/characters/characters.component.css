@@ -1,10 +1,17 @@
 #Characters {
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     gap: 60px;
+}
+
+.cards-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 40px;
 }
 
 .card {
@@ -12,16 +19,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    background-color: blue;
-    border-radius: 25px;
-    padding: 6%;
-}
-
-.card-info {
     text-align: center;
+    gap: 20px;
+    width: 320px;
+    height: 420px;
+    background-color: var(--blue-color);
+    border-radius: 25px;
+    margin: 0px 20px;
 }
 
 .icon-card {
-    height: 250px;
+    height: 200px;
+    border-radius: 50%;
 }
