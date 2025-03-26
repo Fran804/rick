@@ -1,0 +1,28 @@
+#JoinClub {
+    margin-top: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 0% 5%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+}
+
+.title-form {
+    font-family: 'BryndanWrite', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.formulario-container {
+    background-color: var(--green-primary-color);
+    color: black;
+    width: 600px;
+}
