@@ -38,3 +38,15 @@
 .text-card p {
     font-size: 25px;
 }
+
+.form-container {
+    background-color: var(--green-primary-color);
+    color: black;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2%;
+    border-radius: 25px;
+}

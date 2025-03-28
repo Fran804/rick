@@ -2,9 +2,6 @@
     background: var(--green-primary-color);
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
-}
-
-a {
     text-decoration: none;
     border: none;
     color: black;

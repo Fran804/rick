@@ -8,16 +8,31 @@
             ¡No te pierdas ninguna aventura interdimensional!
         </p>
     </div>
-    <div class="formulario-container">
+    <div class="form-card-container">
         <h1 class="title-form">Regístrate ahora</h1>
-        <form action="">
-            <label for="">Nombre</label>
-            <input type="text">
-            <label for="">Correo</label>
-            <input type="email">
-            <label for="">Personaje Favorito</label>
-            <input type="text">
-            <button type="submit">Registrarte</button>
+        <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()" action="" class="form-container">
+            <div class="inputs-container">
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" formControlName="name">
+                @if (campoEsInvalido('name')) {
+                    <span class="error-msg">*El nombre es obligatorio y debe tener al menos 3 caracteres.</span>
+                }
+            </div>
+            <div class="inputs-container">
+                <label for="email">Correo:</label>
+                <input id="email" type="email" formControlName="email">
+                @if (campoEsInvalido('email')) {
+                    <span class="error-msg">*Ingresa un correo valido.</span>
+                }
+            </div>
+            <div class="inputs-container">
+                <label for="character">Personaje Favorito:</label>
+                <input id="character" type="text" formControlName="character">
+                @if (campoEsInvalido('character')) {
+                    <span class="error-msg">*El personaje favorito es obligatorio.</span>
+                }
+            </div>
+            <button type="submit" class="btn-register">Registrarse</button>
         </form>
     </div>
 </section>
